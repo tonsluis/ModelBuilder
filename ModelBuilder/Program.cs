@@ -15,7 +15,6 @@ namespace ModelBuilder
       if (parser.ParseInputArgs (args))
       {
         Host host = new Host( parser.DatabaseName, parser.ExportFolderName, parser.Namespace  );
-
         host.Execute();
       }
       if (!parser.Silent)
